@@ -1,6 +1,9 @@
+// backend/src/app.js
+
 const express = require('express');
 const dotenv = require('dotenv');
-const connectDB = require('../config/db'); // DB 연결 함수 import
+
+const connectDB = require('../config/db');
 
 // routes import
 const authRoutes = require('../routes/authRoutes');
@@ -9,7 +12,7 @@ const authRoutes = require('../routes/authRoutes');
 dotenv.config();
 
 // 데이터베이스 연결
-connectDB();
+connectDB(); // 이제 connectDB는 진짜 함수입니다!
 
 const app = express();
 
@@ -19,4 +22,5 @@ app.use(express.json());
 // API Routes
 app.use('/api/auth', authRoutes);
 
-module.exports = app; // 설정이 완료된 app 객체를 내보냅니다.
+module.exports = app;
+

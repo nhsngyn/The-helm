@@ -1,5 +1,5 @@
 {
-  "name": "The_helm",
+  "name": "the-helm",
   "version": "1.0.0",
   "private": true,
   "main": "server.js",
@@ -10,11 +10,8 @@
     "test:watch": "jest --watch --runInBand"
   },
   "dependencies": {
-    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2"
+    "express": "^5.1.0"
   },
   "devDependencies": {
     "jest": "^29.7.0",
